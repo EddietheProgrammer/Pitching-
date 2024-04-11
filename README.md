@@ -1,2 +1,2 @@
-# Pitching_Plus
+# Pitching-Plus
 Web App for my Pitching Plus Model
