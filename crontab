@@ -1,0 +1,10 @@
+0 7 * * * python3 /app/python >> /app/cron.log 2>&1
+# Stop the cron job on October 1st
+@reboot if [ $(date +\%s) -gt $(date -d "2024-10-01 00:00:00" +\%s) ]; then crontab -r; fi
+
+# * min (0-59)
+# * hour (0-23)
+# * day (1-31)
+# * month (1-12) || jan,feb,mar ...
+# * weekday (0-6) || sun,mon,tue,wed ... sun = 0
+# command
