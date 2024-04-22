@@ -145,7 +145,7 @@ st.markdown("""
     <ul>
         <li> Note: Pitching+ is a metric that objectively quantifies how well a pitch thrown
         can generate a whiff. I have an article that goes in depth on the statistic posted on
-        my twitter and GitHub repository. Thanks </li>
+        my twitter and GitHub repository. Thanks. </li>
     </ul>
 </span>
 """, unsafe_allow_html=True)

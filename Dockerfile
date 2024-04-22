@@ -14,7 +14,7 @@ COPY . /app
 EXPOSE 8501
 
 # Define environment variable for Streamlit
-ENV STREAMLIT_SERVER_PORT 8501
+ENV STREAMLIT_SERVER_PORT 0.0.0.0.8501
 
 # Copy crontab file
 COPY crontab /etc/crontab
