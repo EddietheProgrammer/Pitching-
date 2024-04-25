@@ -135,7 +135,7 @@ st.markdown("""
 <span style='color:white'>
     <ul>
         <li> A qualified pitcher is one who has thrown at least 1 IP for every game a team has played.
-        So if Justin Verlander throws 21 innings and his team has played 20, he would be considered as a qualifying pitcher. </li>
+        So if Justin Verlander throws 21 innings and his team has played 20 games, he would be considered a qualified pitcher. </li>
     </ul>
 </span>
 """, unsafe_allow_html=True)
