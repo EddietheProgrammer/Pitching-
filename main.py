@@ -63,9 +63,8 @@ if category != 'Qualified':
     savant = savant[savant['IP'] >= min_ip]
 else:
     qualified = load_data_helpers(2)
-    # lol. Just witness this. With the help of Chat-GPT, I was able to compile a filter tool that filters
-    # the team in the savant team column then compares if the inning is greater than or equal to the 
-    # qualified values with respect to team. 
+    # I compiled a filter tool that filters the team in the savant team column then compares
+    # if the inning is greater than or equal to the qualified values with respect to team. 
     savant['qualified'] = [True if team in qualified and innings >= qualified[team] else False for team, innings in zip(savant['team'], savant['IP'])]
     savant = savant[savant['qualified'] == True].drop('qualified', axis=1)
 
