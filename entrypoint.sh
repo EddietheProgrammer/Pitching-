@@ -1,4 +1,4 @@
 #!/bin/bash
 service cron start
-crontab /etc/crontab
+crontab /app/crontab
 streamlit run main.py
