@@ -17,7 +17,7 @@ EXPOSE 8501
 ENV STREAMLIT_SERVER_PORT 0.0.0.0.8501
 
 # Copy crontab file
-COPY crontab /etc/crontab
+# COPY crontab /etc/crontab
 
 # Set shell
 SHELL ["/bin/sh", "-c"]
@@ -29,4 +29,4 @@ COPY entrypoint.sh /app/entrypoint.sh
 RUN chmod +x /app/entrypoint.sh
 
 # Run entrypoint script when the container launches
-CMD ["/bin/bash", "/app/entrypoint.sh"]
+CMD ["/bin/sh", "/app/entrypoint.sh"]
