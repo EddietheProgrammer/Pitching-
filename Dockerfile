@@ -20,7 +20,7 @@ ENV STREAMLIT_SERVER_PORT 0.0.0.0.8501
 COPY crontab /etc/crontab
 
 # Set shell
-SHELL ["/bin/bash", "-c"]
+SHELL ["/bin/sh", "-c"]
 
 # Copy entrypoint script
 COPY entrypoint.sh /app/entrypoint.sh
